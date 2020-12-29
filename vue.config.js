@@ -6,5 +6,5 @@ module.exports = {
             }
         }
     },
-    PublicPath: '/weatherApp/'
+    publicPath: '/weatherApp/'
 }
