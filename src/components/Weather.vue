@@ -72,7 +72,7 @@ export default {
         getWeather: async function() {
             console.log(this.citySearch)
             const key = '5299e83c9cf2fef510fb8ddaa3206ac8'
-            const baseURL = `http://api.openweathermap.org/data/2.5/weather?q=${this.citySearch}&appid=${key}&units=metric`
+            const baseURL = `https://api.openweathermap.org/data/2.5/weather?q=${this.citySearch}&appid=${key}&units=metric`
             const response = await fetch(baseURL)
             const data = await response.json()
             console.log(data)
@@ -85,8 +85,8 @@ export default {
             this.weather.bottomTemp = Math.round(data.main.temp_min)
             this.weather.feelsLike = Math.round(data.main.feels_like)
             this.weather.humidity = Math.round(data.main.humidity)
-            const time = data.weather[0].icon
             //time
+            const time = data.weather[0].icon
             if (time.includes("n")) {
                 this.ifDay = false
             } else {
