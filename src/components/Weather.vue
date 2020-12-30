@@ -111,7 +111,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto;
     font-size: 1.5rem;
     font-family: sans-serif;
