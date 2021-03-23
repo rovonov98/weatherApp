@@ -5,6 +5,6 @@ module.exports = {
                 additionalData: `@import "@/assets/scss/global.scss";`
             }
         }
-    },
-    publicPath: '/weatherApp/'
+    }
+    // publicPath: '/weatherApp/'
 }
